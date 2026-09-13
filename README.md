@@ -1,121 +1,135 @@
-# 🚀 [Your Project Title Here]
+# AI Security Shield
 
-> ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
+**An intelligent, AI-powered cybersecurity warning layer that automatically detects suspicious digital interactions, correlates security signals, and warns users before threats escalate.**
 
 ---
 
-## 👥 Team
+## Team: Cyber Defender
 
-| Field | Value |
+| Name | Role |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| Member 1 | Development / Frontend / Backend / Integration |
+| Member 2 | Cybersecurity Logic / Signal Data / Correlation / Risk Scoring |
+| Member 3 | Documentation / Architecture / Demo / Presentation |
+
+**Track:** AI
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
-> In 2–3 sentences: What problem does your project solve? Who experiences this problem?
+Users encounter suspicious emails, malicious links, authentication anomalies, and endpoint compromises every day. Existing security tools generate fragmented, siloed alerts that require security analysts to manually correlate them — by which time an attack chain may already be in progress.
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
-
----
-
-## 💡 Solution
-
-> In 2–3 sentences: What did you build? How does it solve the problem above?
-
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+**AI Security Shield** acts as an intelligent warning layer. It collects security signals, understands their context, identifies suspicious patterns across signals, assigns a transparent risk score, explains *why* something is risky, and fires an immediate, prominent Security Shield Warning before threats escalate.
 
 ---
 
-## ✨ Key Features
+## Solution
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
-
----
-
-## 🛠️ Tech Stack
-
-| Category | Technologies |
-|---|---|
-| **Languages** | [e.g., Python, TypeScript] |
-| **Frameworks** | [e.g., FastAPI, React] |
-| **IBM Technologies** | [e.g., watsonx.ai, IBM Bob, IBM Cloud] |
-| **Databases** | [e.g., PostgreSQL, Redis] |
-| **Other** | [e.g., Docker, GitHub Actions] |
-
----
-
-## 📁 Repository Structure
+AI Security Shield ingests simulated security signals, runs them through a multi-stage analysis pipeline, and produces correlated incidents with AI-powered explanations:
 
 ```
-├── src/                  # All source code
-├── docs/                 # Written documentation
-│   ├── problem-statement.md
-│   ├── solution-overview.md
-│   ├── architecture.md
-│   └── setup-guide.md
-├── demo/                 # Demo artifacts
-│   ├── screenshots/      # App screenshots
-│   └── demo-video-link.txt  # Link to demo video
-├── presentation/         # Slide deck
-└── submission.yaml       # Structured submission metadata
+Security Signals (Email → URL → Auth → Endpoint → Threat Intel)
+    ↓ Normalization
+    ↓ Correlation (shared user/device/IP/domain + time proximity)
+    ↓ Risk Scoring (5-factor transparent formula, 0–100)
+    ↓ Technique Classification (MITRE ATT&CK references)
+    ↓ AI Investigation Summary (IBM watsonx.ai or built-in fallback)
+    ↓ Security Shield Warning (HIGH / CRITICAL incidents)
 ```
+
+### Key Features
+
+1. **Security Signal Ingestion** — Simulated email, URL, authentication, endpoint, and threat-intelligence signals
+2. **Intelligent Correlation** — Union-Find algorithm groups related signals by shared indicators (user, device, IP, domain) and time proximity
+3. **Transparent Risk Scoring** — 5-factor formula (severity, signal count, threat intel, confidence, time proximity) with human-readable explanations
+4. **MITRE ATT&CK Classification** — Automatic technique tagging per signal type
+5. **AI Investigation Summary** — IBM watsonx.ai Granite model generates concise BLUF summaries; reliable built-in fallback if API key not configured
+6. **Security Shield Warning** — Prominent, unmissable warning banner for HIGH/CRITICAL incidents
+7. **SOC Dashboard** — Dark-theme security operations center UI with live stats, risk charts, and incident table
+8. **Incident Detail View** — Full correlated signal timeline, risk breakdown, technique tags, AI summary, and recommended action
 
 ---
 
-## ⚡ How to Run
+## Tech Stack
 
-> **Copy these exact steps from your [`docs/setup-guide.md`](docs/setup-guide.md)**
+| Layer | Technology |
+|---|---|
+| Frontend | React 18 + TypeScript + Vite |
+| Styling | Tailwind CSS |
+| Charts | Recharts |
+| Icons | Lucide React |
+| Routing | React Router v6 |
+| AI/ML | IBM watsonx.ai (Granite-13B) — optional; full fallback included |
+| Data | Static JSON (simulated security signals) |
+| Backend | None required |
+
+---
+
+## How to Run
+
+### Prerequisites
+- Node.js 18+ installed
+- npm 9+ installed
+
+### Installation
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/[your-repo].git
-cd [your-repo]
-
-# 2. Install dependencies
-[your install command here]
-
-# 3. Configure environment
-cp .env.example .env
-# Edit .env with your values
-
-# 4. Run the project
-[your run command here]
+cd src
+npm install
+npm run dev
 ```
 
----
+Open your browser at **http://localhost:5173**
 
-## 🖥️ Demo
+### Optional: IBM watsonx.ai Integration
 
-| Artifact | Link |
-|---|---|
-| 📹 Demo Video | [See demo/demo-video-link.txt](demo/demo-video-link.txt) |
-| 🌐 Live Demo | [See demo/live-demo-url.txt](demo/live-demo-url.txt) |
-| 🖼️ Screenshots | [See demo/screenshots/](demo/screenshots/) |
-| 📊 Presentation | [See presentation/slides.pdf](presentation/) |
+To enable real AI-generated summaries:
 
----
+1. Copy `src/.env.example` to `src/.env.local`
+2. Fill in your `VITE_BOB_API_KEY` and `VITE_BOB_PROJECT_ID`
+3. Restart the dev server
 
-## ⚠️ Known Limitations
-
-> Be honest — judges appreciate transparency over overclaiming.
-
-- [Limitation 1: e.g., "Authentication is mocked — not production-ready"]
-- [Limitation 2: e.g., "Only tested on Chrome"]
-- [Limitation 3: e.g., "Feature X is scaffolded but not fully implemented"]
+The application works fully without an API key using the built-in AI fallback summary.
 
 ---
 
-## 🏅 What We're Most Proud Of
+## Demo Scenario
 
-[Tell the judges what part of your submission is strongest and worth paying close attention to.]
+The prebuilt demo scenario shows a coordinated attack against `alice@company.com`:
+
+1. **Phishing Email** — suspicious email from `phishing-corp.ru`
+2. **Malicious URL Click** — Alice clicks the embedded link
+3. **Login Anomaly** — login from Tor exit node IP `185.220.101.45`
+4. **Endpoint Compromise** — base64-encoded PowerShell executed on `ALICE-WIN11`
+5. **Threat Intelligence Match** — IP confirmed in AlienVault OTX / Abuse.ch feeds
+
+**Result:** AI Security Shield correlates all 5 signals → Risk Score: 100/100 → CRITICAL → Security Shield Warning fires → AI generates investigation summary → Recommended action displayed.
 
 ---
+
+## Architecture
+
+See [`docs/architecture.md`](docs/architecture.md) for the full architecture diagram.
+
+---
+
+## Demo Links
+
+- Live Demo: [See demo/live-demo-url.txt](demo/live-demo-url.txt)
+- Demo Video: [See demo/demo-video-link.txt](demo/demo-video-link.txt)
+
+---
+
+## Known Limitations
+
+- Uses simulated/sample security data only — not connected to real threat feeds
+- IBM watsonx.ai integration requires API credentials; fallback summary used otherwise
+- No persistent storage — state resets on page refresh
+- Single-user, single-session UI (no multi-tenancy)
+
+---
+
+## What We're Most Proud Of
+
+The **Security Shield Warning** — a visually striking, contextually accurate, zero-false-positive warning banner that fires only on HIGH/CRITICAL correlated incidents and explains exactly *why* the risk is elevated with actionable recommended defensive steps. Built in one day by a three-person team.

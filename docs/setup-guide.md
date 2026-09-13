@@ -1,79 +1,90 @@
 # Setup Guide
 
-> **This file is read by the automated evaluation pipeline. Be precise and complete.**
-
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
-
-- [ ] [e.g., Python 3.11+]
-- [ ] [e.g., Node.js 18+]
-- [ ] [e.g., Docker Desktop]
-- [ ] [e.g., An IBM Cloud account with watsonx.ai access]
-
-## Environment Variables
-
-Copy `.env.example` to `.env` and fill in the values:
-
-```bash
-cp .env.example .env
-```
-
-| Variable | Description | Required |
+| Requirement | Version | Notes |
 |---|---|---|
-| `WATSONX_API_KEY` | Your IBM watsonx.ai API key | Yes |
-| `WATSONX_PROJECT_ID` | Your watsonx.ai project ID | Yes |
-| `DATABASE_URL` | PostgreSQL connection string | Yes |
-| `SLACK_WEBHOOK_URL` | Slack webhook for alerts | No |
+| Node.js | 18.0+ | [nodejs.org](https://nodejs.org) |
+| npm | 9.0+ | Included with Node.js |
+| Git | Any | For cloning |
+| Browser | Chrome / Firefox / Edge | Any modern browser |
+
+No database, no Docker, no cloud account required for the demo.
 
 ## Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[your-org]/[your-repo].git
-cd [your-repo]
+git clone https://github.com/[team]/bob-ai-hackathon-Cyber-Defender.git
+cd bob-ai-hackathon-Cyber-Defender
 
-# 2. Install backend dependencies
-[your command — e.g.: pip install -r requirements.txt]
+# 2. Navigate to the source directory
+cd src
 
-# 3. Install frontend dependencies (if applicable)
-[your command — e.g.: cd frontend && npm install]
+# 3. Install dependencies
+npm install
 
-# 4. Set up the database (if applicable)
-[your command — e.g.: python manage.py migrate]
+# 4. Start the development server
+npm run dev
 ```
 
-## Running the Application
+Open your browser at **http://localhost:5173**
+
+The application loads immediately with the prebuilt demo scenario.
+
+## Optional: IBM watsonx.ai AI Summaries
+
+By default, AI summaries are generated using the built-in fallback engine — no API key needed.
+
+To enable IBM watsonx.ai real AI summaries:
 
 ```bash
-# Start the backend
-[your command — e.g.: uvicorn app.main:app --reload]
-
-# Start the frontend (in a separate terminal, if applicable)
-[your command — e.g.: cd frontend && npm run dev]
+# In the src/ directory, create .env.local
+cp .env.example .env.local
 ```
 
-The application will be available at: `http://localhost:[PORT]`
+Edit `src/.env.local`:
 
-## Running Tests
+```
+VITE_BOB_API_KEY=your_ibm_cloud_api_key_here
+VITE_BOB_PROJECT_ID=your_watsonx_project_id_here
+VITE_BOB_URL=https://us-south.ml.cloud.ibm.com
+```
+
+Then restart the dev server:
 
 ```bash
-[your test command — e.g.: pytest tests/ -v]
+npm run dev
 ```
 
-## Quick Demo (Optional)
-
-If you have a demo script or sample data to showcase the project quickly:
+## Build for Production
 
 ```bash
-[e.g.: python demo/seed_demo_data.py]
-[e.g.: open http://localhost:8000/demo]
+npm run build
+npm run preview
 ```
+
+The `dist/` folder contains the built application, which can be served by any static file host.
 
 ## Troubleshooting
 
-| Issue | Solution |
+| Problem | Solution |
 |---|---|
-| [e.g., `ModuleNotFoundError`] | [e.g., Run `pip install -r requirements.txt` again] |
-| [e.g., Database connection refused] | [e.g., Ensure PostgreSQL is running: `docker compose up db`] |
-| [e.g., watsonx.ai 401 error] | [e.g., Check `WATSONX_API_KEY` in your `.env` file] |
+| `npm: command not found` | Install Node.js 18+ from nodejs.org |
+| `vite: command not found` | Run `npm install` first |
+| Port 5173 already in use | Vite will automatically use the next available port |
+| AI summary shows fallback text | This is correct — add API keys to enable live AI summaries |
+| Blank page after build | Check browser console; ensure `dist/` is served from web root |
+
+## Running the Demo
+
+1. Open **http://localhost:5173**
+2. The Dashboard shows 12 security signals and multiple incidents
+3. Click the **CRITICAL** incident at the top of the incident table
+4. The Security Shield Warning banner fires immediately
+5. Scroll down to see the 5 correlated signals in the attack timeline
+6. The AI Security Analysis panel shows the incident summary
+7. The Recommended Action box shows defensive steps
+8. Click **Back to Dashboard** to return
+
+The full demo walkthrough takes approximately 2 minutes.
