@@ -37,7 +37,8 @@ export function useIncidentSummary(incident: Incident) {
         setLoading(false);
         generatingRef.current = false;
       });
-  }, [incident]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [incident.id]);
 
   return { summary, loading, error };
 }
