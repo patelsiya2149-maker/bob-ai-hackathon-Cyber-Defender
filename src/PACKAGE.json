@@ -1,0 +1,14 @@
+{
+  "name": "ai-security-shield-mvp",
+  "version": "1.0.0",
+  "description": "AI Security Shield MVP — alert correlation with MITRE ATT&CK mapping",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:demo": "node index.js demo_alerts.json",
+    "test": "node tests/mitre.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
