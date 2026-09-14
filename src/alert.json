@@ -1,1 +1,58 @@
+[
+  {
+    "id": "DEMO-001",
+    "source": "Email Security",
+    "type": "suspicious_url",
+    "user": "Employee-42",
+    "device": null,
+    "timestamp": "2024-07-01T10:21:00Z",
+    "severity": "medium",
+    "indicator": "http://secure-login-verify.example/reset",
+    "description": "Suspicious URL received in email by Employee-42 pointing to newly registered domain secure-login-verify.example"
+  },
+  {
+    "id": "DEMO-002",
+    "source": "Authentication",
+    "type": "multiple_failed_logins",
+    "user": "Employee-42",
+    "device": null,
+    "timestamp": "2024-07-01T10:24:00Z",
+    "severity": "high",
+    "indicator": "10.10.5.42",
+    "description": "7 consecutive failed login attempts for Employee-42 from internal address 10.10.5.42 within 3 minutes of suspicious email receipt"
+  },
+  {
+    "id": "DEMO-003",
+    "source": "Endpoint",
+    "type": "suspicious_script",
+    "user": "Employee-42",
+    "device": "Laptop-42",
+    "timestamp": "2024-07-01T10:26:00Z",
+    "severity": "high",
+    "indicator": "10.10.5.42",
+    "description": "Suspicious script executed from user temp directory on Laptop-42 by Employee-42 shortly after multiple failed login alerts"
+  },
+  {
+    "id": "DEMO-004",
+    "source": "Threat Intelligence",
+    "type": "ti_match",
+    "user": null,
+    "device": null,
+    "timestamp": "2024-07-01T10:27:00Z",
+    "severity": "high",
+    "indicator": "suspicious-domain.example",
+    "description": "Threat intelligence feed flags suspicious-domain.example as a known phishing infrastructure domain active in current campaigns"
+  },
+  {
+    "id": "DEMO-005",
+    "source": "Email Security",
+    "type": "newsletter",
+    "user": "Employee-77",
+    "device": null,
+    "timestamp": "2024-07-01T15:00:00Z",
+    "severity": "low",
+    "indicator": "newsletter.safe-vendor.example",
+    "description": "Routine marketing newsletter received by Employee-77 from safe-vendor.example; no threat indicators detected"
+  }
+]
 
