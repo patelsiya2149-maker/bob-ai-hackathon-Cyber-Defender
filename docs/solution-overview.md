@@ -1,4 +1,4 @@
-# Solution Overview
+
 # Solution Overview
 
 ## What We Built
