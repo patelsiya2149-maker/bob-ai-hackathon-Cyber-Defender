@@ -2,13 +2,18 @@ team:
   name: "Cyber Defender"
   track: "AI"
   lead:
-    name: "Team Lead"
-    email: "team@example.com"
+    name: "Shreeya Patel"
+    email: "26dce083@charusat.edu.in"
   members:
-    - "Member 1 (Development)"
+    - "Member 1 task:(Development)"
+    name: "Siya Patel"
+    email: "26cs095@charusat.edu.in"
     - "Member 2 (Cybersecurity Logic)"
+    name: "Shreeya Patel"
+    email: "26dce083@charusat.edu.in"
     - "Member 3 (Documentation)"
-
+    name: "Pragati Thakkar"
+    email: "26dce108@charusat.edu.in"
 submission:
   title: "AI Security Shield"
   problem_statement: >
