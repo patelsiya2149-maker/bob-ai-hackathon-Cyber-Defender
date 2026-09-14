@@ -36,7 +36,7 @@ export function NavBar() {
           </Link>
         </nav>
 
-        {/* Right stats */}
+        {/* Right stats — only shown when there is actual data */}
         <div className="ml-auto flex items-center gap-4">
           {criticalCount > 0 && (
             <div className="flex items-center gap-1.5 text-xs font-medium text-red-400 bg-red-900/20 border border-red-800 rounded-full px-3 py-1 animate-pulse">
@@ -44,10 +44,12 @@ export function NavBar() {
               {criticalCount} Critical
             </div>
           )}
-          <div className="text-xs text-shield-muted">
-            <span className="text-shield-dim font-medium">{stats.totalSignals}</span> signals ·{' '}
-            <span className="text-shield-dim font-medium">{stats.activeIncidents}</span> incidents
-          </div>
+          {stats.totalSignals > 0 && (
+            <div className="text-xs text-shield-muted">
+              <span className="text-shield-dim font-medium">{stats.totalSignals}</span> signals ·{' '}
+              <span className="text-shield-dim font-medium">{stats.activeIncidents}</span> incidents
+            </div>
+          )}
         </div>
       </div>
     </header>
