@@ -1,41 +1,63 @@
 # Solution Overview
+# Solution Overview
 
 ## What We Built
 
-[Describe your solution in plain language. Avoid jargon — write as if explaining to a smart colleague unfamiliar with your tech stack.]
+AI Security Sheild is an AI-powered cybersecurity solution designed to
+help users identify and understand potential cyber threats.
+
+The solution provides users with a simple way to analyze suspicious
+cybersecurity-related information and receive understandable results
+and recommendations. Instead of requiring users to have advanced
+cybersecurity knowledge, Cyber Defender presents security information
+in a clear and user-friendly manner.
+
+The main goal is to help users recognize threats early and make safer
+decisions while using digital services.
 
 ## How It Works
 
-[Explain the core mechanism step by step. A numbered list or simple flow works well here.]
+AI Security Sheild follows a simple process:
 
-1. [Step 1: e.g., "User connects their GitHub repository via OAuth"]
-2. [Step 2: e.g., "The system ingests pipeline logs and feeds them to watsonx.ai"]
-3. [Step 3: e.g., "An anomaly score is computed and displayed on the dashboard"]
-4. [Step 4: e.g., "Alerts are sent to Slack when the score exceeds a threshold"]
+1. The user provides the required security-related input through the
+   application.
+
+2. The system processes and analyzes the input to identify potential
+   cybersecurity risks.
+
+3. The AI component evaluates the information and determines whether
+   suspicious or potentially harmful characteristics are present.
+
+4. The system generates an understandable explanation of the detected
+   risk.
+
+5. The result is presented to the user along with recommended actions
+   to improve security.
+
+6. The user can use the recommendation to decide whether the activity
+   should be avoided, investigated, or considered safe.
 
 ## Architecture Diagram
 
-> See [`architecture.md`](architecture.md) for the detailed diagram.
+> See [architecture.md](architecture.md) for the detailed architecture.
 
-[Optionally include a simple ASCII or Mermaid diagram here for quick reference.]
-
-```
-[User] → [Frontend: React] → [API: FastAPI] → [watsonx.ai] → [Dashboard]
-                                    ↓
-                             [PostgreSQL DB]
-```
-
-## Key Design Decisions
-
-| Decision | Rationale |
-|---|---|
-| [e.g., Used watsonx.ai for anomaly detection] | [e.g., Pre-trained models reduced time-to-value vs. building from scratch] |
-| [Decision 2] | [Rationale 2] |
-| [Decision 3] | [Rationale 3] |
-
-## IBM Technologies Used
-
-[Explain specifically HOW you used each IBM technology — not just that you used it.]
-
-- **[IBM Tech 1, e.g., watsonx.ai]:** [How it was used — e.g., "Used the `ibm/granite-13b-instruct-v2` model via the Python SDK to classify anomaly types from log text."]
-- **[IBM Tech 2]:** [How it was used]
+```text
+[User]
+   |
+   v
+[Cyber Defender Interface]
+   |
+   v
+[Application / Backend]
+   |
+   v
+[AI / Threat Analysis]
+   |
+   v
+[Risk Assessment]
+   |
+   v
+[Security Recommendation]
+   |
+   v
+[User]
