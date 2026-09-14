@@ -168,3 +168,26 @@ export interface DashboardStats {
   riskDistribution: { level: RiskLevel; count: number }[];
   signalsBySource: { source: SignalSource; count: number }[];
 }
+
+// ─── Analysis Result (from Analyze Event panel) ───────────────────────────────
+
+export interface AnalysisResult {
+  signal: NormalizedSignal;
+  incident: Incident;
+  isNewIncident: boolean;          // true = new incident created; false = merged into existing
+  previousScore: number | null;    // score before adding signal (null if new)
+}
+
+// ─── Live Feed Entry ──────────────────────────────────────────────────────────
+
+export interface FeedEntry {
+  id: string;
+  timestamp: string;
+  signalTitle: string;
+  signalSource: SignalSource;
+  signalSeverity: Severity;
+  incidentId: string;
+  riskScore: number;
+  riskLevel: RiskLevel;
+  isNewIncident: boolean;
+}
