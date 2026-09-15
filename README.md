@@ -67,6 +67,100 @@ Security Signals (Email → URL → Auth → Endpoint → Threat Intel)
 
 ---
 
+## Repository Structure.
+bob-ai-hackathon-Cyber-Defender/
+│
+├── .github/
+│   └── workflows/
+│       └── validate-submission.yml
+│
+├── src/
+│   │
+│   ├── components/
+│   │   ├── Dashboard.tsx
+│   │   ├── IncidentDetail.tsx
+│   │   ├── SecurityWarning.tsx
+│   │   ├── RiskChart.tsx
+│   │   ├── IncidentTable.tsx
+│   │   ├── SignalCard.tsx
+│   │   ├── RiskScore.tsx
+│   │   ├── MitreTags.tsx
+│   │   └── BLUFSummary.tsx
+│   │
+│   ├── data/
+│   │   └── signals.json
+│   │
+│   ├── engine/
+│   │   ├── normalizer.ts
+│   │   ├── correlator.ts
+│   │   ├── riskScorer.ts
+│   │   ├── techniqueClassifier.ts
+│   │   ├── incidentBuilder.ts
+│   │   └── aiSummary.ts
+│   │
+│   ├── services/
+│   │   └── bobClient.ts
+│   │
+│   ├── hooks/
+│   │   └── useSecurityEngine.ts
+│   │
+│   ├── types/
+│   │   └── security.ts
+│   │
+│   ├── assets/
+│   │   └── ...
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── index.css
+│   ├── vite-env.d.ts
+│   │
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── tsconfig.json
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   └── .env.example
+│
+├── docs/
+│   │
+│   ├── architecture.md
+│   ├── problem-statement.md
+│   ├── proposed-solution.md
+│   ├── technical-implementation.md
+│   ├── risk-scoring.md
+│   ├── signal-correlation.md
+│   ├── mitre-attack.md
+│   ├── ai-integration.md
+│   ├── user-flow.md
+│   ├── testing.md
+│   ├── limitations.md
+│   └── future-scope.md
+│
+├── demo/
+│   │
+│   ├── demo-video.mp4
+│   ├── demo-script.md
+│   ├── user-flow.md
+│   └── screenshots/
+│       ├── 01-dashboard.png
+│       ├── 02-security-warning.png
+│       ├── 03-incident-detail.png
+│       ├── 04-risk-score.png
+│       ├── 05-mitre-techniques.png
+│       └── 06-bluf-summary.png
+│
+├── presentation/
+│   ├── AI-Security-Shield.pptx
+│   └── AI-Security-Shield.pdf
+│
+├── .gitignore
+├── README.md
+├── CONTRIBUTING.md
+├── ai-security-shield-plan.md
+└── submission.yaml
+
 ## How to Run
 
 ### Prerequisites
