@@ -5,6 +5,7 @@
 ---
 
 ## Team: Cyber Defender
+**Track:** AI
 Team Lead : SHREEYA
 
 | No. | Name | Role | Email-ID |
@@ -12,7 +13,7 @@ Team Lead : SHREEYA
 | Member 1 | SIYA | Development / Frontend / Backend / Integration | 26cs095@charusat.edu.in | 
 | Member 2 | SHREEYA | Cybersecurity Logic / Signal Data / Correlation / Risk Scoring | 26dce083@charusat.edu.in |
 | Member 3 | PRAGATI | Documentation / Architecture / Demo / Presentation | 26dce108@charusat.edu.in |
-**Track:** AI
+
 
 ---
 
