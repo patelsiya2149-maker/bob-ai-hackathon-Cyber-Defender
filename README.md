@@ -68,6 +68,7 @@ Security Signals (Email → URL → Auth → Endpoint → Threat Intel)
 ---
 
 ## Repository Structure.
+```text
 bob-ai-hackathon-Cyber-Defender/
 │
 ├── .github/
