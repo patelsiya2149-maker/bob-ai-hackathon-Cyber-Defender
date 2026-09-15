@@ -7,12 +7,11 @@
 ## Team: Cyber Defender
 Team Lead : SHREEYA
 
-| No. | Name | Role | Email-ID
+| No. | Name | Role | Email-ID |
 |---|---|---|---|
-| Member 1 | SIYA | Development / Frontend / Backend / Integration | 26cs095@charusat.edu.in
-| Member 2 | SHREEYA | Cybersecurity Logic / Signal Data / Correlation / Risk Scoring | 26dce083@charusat.edu.in
-| Member 3 | PRAGATI | Documentation / Architecture / Demo / Presentation | 26dce108@charusat.edu.in
-
+| Member 1 | SIYA | Development / Frontend / Backend / Integration | 26cs095@charusat.edu.in | 
+| Member 2 | SHREEYA | Cybersecurity Logic / Signal Data / Correlation / Risk Scoring | 26dce083@charusat.edu.in |
+| Member 3 | PRAGATI | Documentation / Architecture / Demo / Presentation | 26dce108@charusat.edu.in |
 **Track:** AI
 
 ---
@@ -300,15 +299,12 @@ See [`docs/architecture.md`](docs/architecture.md) for the full architecture dia
 ---
 
 ## Demo Links
-
-- Live Demo: demo/live-demo-url.txt
-- Demo Video: demo/demo-video-link.txt
-- Presentation: presentation/AI SECURITY SHIELD.PDF
-- Screenshots: demo/screenshots/landing-page.png
-              demo/screenshots/main-feature.png
-              demo/screenshots/output.png
-              demo/screenshots/extra-feature.png
-              demo/screenshots/ibm-bob.png
+| Artifact | Link |
+|---|---|
+Live Demo | [`demo/live-demo-url.txt`](demo/live-demo-url.txt) |
+Demo Video | [`demo/demo-video-link.txt`](demo/demo-video-link.txt) |
+Presentation | [`presentation/AI SECURITY SHIELD.PDF`](presentation) |
+Screenshots | [`demo/screenshots/`](demo/screenshots/) |
 ---
 
 ## Known Limitations
