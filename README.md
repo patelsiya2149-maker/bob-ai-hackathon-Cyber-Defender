@@ -301,9 +301,14 @@ See [`docs/architecture.md`](docs/architecture.md) for the full architecture dia
 
 ## Demo Links
 
-- Live Demo: Not Deployed
-- Demo Video: (https://drive.google.com/file/d/1ru4GiJhXyowkc81fGCrseKkZu56gTtsD/view?usp=drivesdk)
-
+- Live Demo: demo/live-demo-url.txt
+- Demo Video: demo/demo-video-link.txt
+- Presentation: presentation/AI SECURITY SHIELD.PDF
+- Screenshots: demo/screenshots/landing-page.png
+              demo/screenshots/main-feature.png
+              demo/screenshots/output.png
+              demo/screenshots/extra-feature.png
+              demo/screenshots/ibm-bob.png
 ---
 
 ## Known Limitations
