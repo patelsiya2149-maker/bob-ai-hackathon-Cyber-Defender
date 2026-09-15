@@ -68,6 +68,6 @@ tech_stack:
 
 artifacts:
   repository: "https://github.com/patelsiya2149-maker/bob-ai-hackathon-Cyber-Defender"
-  demo_video: "See demo/demo-video-link.txt"
-  live_demo: "See demo/live-demo-url.txt"
-  presentation: "presentation/slides.pdf"
+  demo_video: "https://drive.google.com/file/d/1ru4GiJhXyowkc81fGCrseKkZu56gTtsD/view?usp=drivesdk"
+  live_demo: "No Deploy"
+  presentation: "AI SECURITY SHIELD.PDF"
