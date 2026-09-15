@@ -1,97 +1,94 @@
 # Demo Script
 
-## AI Security Shield — Demo Walkthrough
+AI Security Shield — How a User Uses the Application
 
-**Duration:** ~3 minutes  
-**What to show:** A coordinated 5-signal cyber attack against user `alice@company.com` — automatically detected, correlated, scored, and warned by AI Security Shield.
+Step 1 — Open the Application
 
----
+Open the AI Security Shield website.
+Click on the start monitoring.
 
-## Step 1 — Open the Dashboard (~30 seconds)
+The user is taken directly to the Security Dashboard. No manual security details need to be entered by the user.
 
-Open browser at **http://localhost:5173**
+Step 2 — Check the Dashboard
 
-**Say:**
-> "This is the AI Security Shield SOC dashboard. It has ingested 12 security signals from across our organization — emails, URL clicks, authentication events, endpoint alerts, and threat intelligence feeds. The system has automatically correlated these into separate incidents. Let's look at the most critical one."
+On the dashboard, the user can immediately see:
 
-**Point to:**
-- The 4 stat cards (12 total signals, active incidents, high/critical count, average risk score)
-- The CRITICAL incident at the top of the incident table with a red badge
+- Total security signals
+- Active incidents
+- High-risk incidents
+- Overall risk
+- Risk distribution
 
----
+The user first checks this overview to understand the current security situation.
 
-## Step 2 — Click the CRITICAL Incident (~15 seconds)
+Step 3 — Review Detected Signals
 
-Click the row showing **Multi-Signal Incident — alice@company.com** with `CRITICAL` badge.
+Scroll to the Security Signals section.
 
-**Say:**
-> "I'm clicking on this CRITICAL incident. Watch what happens."
+Here, the user can see the security events detected by the system, including information such as users, devices, IP addresses, domains, and authentication or email activity.
 
----
+The user does not need to manually enter these details. The application processes the available signals automatically.
 
-## Step 3 — Security Shield Warning Fires (~30 seconds)
+Step 4 — Identify a High-Risk Incident
 
-The Incident Detail page loads with the Security Shield Warning banner at the top.
+From the dashboard, the user looks for an incident marked HIGH or CRITICAL.
 
-**Say:**
-> "The AI Security Shield immediately fires this warning. CRITICAL THREAT DETECTED. Risk Score: 100 out of 100. The Shield has already identified why — a phishing email, a malicious URL click, an anomalous login, suspicious PowerShell execution, and a confirmed threat intelligence match. All targeting the same user — Alice."
+This allows the user to focus on the incidents that require the most attention instead of checking every signal individually.
 
-**Point to:**
-- The pulsing shield icon
-- The `100/100` risk score bar
-- The 'Why This Is Flagged' bullet list
-- The 'Recommended Immediate Action' box
+Step 5 — Open the Incident
 
----
+Click on the high-risk incident.
 
-## Step 4 — AI Investigation Summary (~30 seconds)
+The application opens the Incident Details view.
 
-Scroll down slightly to the AI Security Analysis panel.
+Step 6 — Understand Why the Incident Was Created
 
-**Say:**
-> "IBM watsonx.ai has analyzed this incident and generated this investigation summary. It explains the attack chain in plain language — from the initial phishing email through to the endpoint compromise. This is a BLUF — Bottom Line Up Front — so the analyst gets the most critical information immediately."
+In the incident details, the user can see the signals that were connected to the incident.
 
-**Point to:**
-- The IBM watsonx.ai badge
-- The summary text
+The system has correlated related security activity so the user can understand the bigger picture instead of investigating each alert separately.
 
----
+Step 7 — Check the Risk Score
 
-## Step 5 — Attack Timeline (~30 seconds)
+Look at the Risk Score.
 
-Scroll to the Attack Timeline section.
+The user can see how serious the incident is and use the score to help prioritize the investigation.
 
-**Say:**
-> "Here is the attack timeline. Five correlated signals, all within 41 minutes of each other. T+0: phishing email arrives. T+13 minutes: Alice clicks the malicious link. T+27 minutes: a successful login from a Tor exit node — no MFA. T+39 minutes: a base64-encoded PowerShell command executes on Alice's workstation. T+41 minutes: threat intelligence confirms the source IP is known-malicious, linked to credential theft campaigns."
+Step 8 — Check the Correlated Evidence
 
-**Point to:**
-- The timeline items in order
-- The relative time markers (T+0, T+13m, etc.)
+Review the correlated signals and their relationships.
 
----
+The user can see connections involving entities such as the same user, device, IP address, or domain.
 
-## Step 6 — Technique Tags (~15 seconds)
+This provides supporting evidence for the detected incident.
 
-Scroll to the Attack Techniques section.
+Step 9 — View MITRE ATT&CK Techniques
 
-**Say:**
-> "The Shield has automatically classified the attack techniques using MITRE ATT&CK references. Phishing — initial access. PowerShell execution. Valid accounts — credential access. Threat intelligence indicator of compromise. This tells the analyst exactly what playbook to follow."
+Scroll to the MITRE ATT&CK section.
 
----
+The user can see the techniques associated with the detected behavior.
 
-## Step 7 — Return to Dashboard (~15 seconds)
+This provides additional context about the type of suspicious activity.
 
-Click **Back to Dashboard**.
+Step 10 — Read the BLUF / AI Summary
 
-**Say:**
-> "The AI Security Shield has transformed 5 unrelated security alerts into a single correlated, scored, explained, and actioned incident — automatically, in milliseconds, with no manual analyst work required. That's AI Security Shield."
+Read the BLUF (Bottom Line Up Front) summary.
 
----
+Instead of going through every individual event first, the user gets a concise explanation of the incident, its importance, and the key information needed for investigation.
 
-## Key Talking Points
+Step 11 — Respond to the Warning
 
-- **No infrastructure required** — runs entirely in the browser
-- **Correlation is the innovation** — 5 unrelated alerts become 1 actionable incident
-- **Transparent scoring** — every point is explained; no black box
-- **AI explanation makes it actionable** — not just a number, but a story + recommended action
-- **Works without API key** — demo is reliable; IBM watsonx.ai enhances but does not gate it
+If the incident is classified as high risk or critical, the Security Shield warning highlights that the incident needs attention.
+
+The user can use the information provided in the incident view to decide what should be investigated first.
+
+Step 12 — Return to the Dashboard
+
+After reviewing the incident, return to the main dashboard.
+
+The user can then continue reviewing other incidents or signals.
+
+Complete User Flow
+
+Open Website → View Dashboard → Review Signals → Identify High/Critical Incident → Open Incident → Check Correlation → Check Risk Score → Review MITRE ATT&CK → Read BLUF Summary → Take Investigation Priority → Return to Dashboard
+
+The application is designed so that the user does not have to manually enter security information. The main purpose is to turn multiple security signals into a clear, prioritized incident that the user can investigate.

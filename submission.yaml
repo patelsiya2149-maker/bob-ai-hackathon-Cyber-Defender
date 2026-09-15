@@ -2,13 +2,18 @@ team:
   name: "Cyber Defender"
   track: "AI"
   lead:
-    name: "Team Lead"
-    email: "team@example.com"
+    name: "Shreeya Patel"
+    email: "26dce083@charusat.edu.in"
   members:
-    - "Member 1 (Development)"
-    - "Member 2 (Cybersecurity Logic)"
-    - "Member 3 (Documentation)"
-
+  - task: "Development"
+    name: "Siya Patel"
+    email: "26cs095@charusat.edu.in"
+  - task: "Cybersecurity Logic"
+    name: "Shreeya Patel"
+    email: "26dce083@charusat.edu.in"
+  - task: "Documentation"
+    name: "Pragati Thakkar"
+    email: "26dce108@charusat.edu.in"
 submission:
   title: "AI Security Shield"
   problem_statement: >
@@ -62,7 +67,7 @@ tech_stack:
     - "MITRE ATT&CK Framework (technique classification)"
 
 artifacts:
-  repository: "https://github.com/[team]/bob-ai-hackathon-Cyber-Defender"
-  demo_video: "See demo/demo-video-link.txt"
-  live_demo: "See demo/live-demo-url.txt"
-  presentation: "presentation/slides.pdf"
+  repository: "https://github.com/patelsiya2149-maker/bob-ai-hackathon-Cyber-Defender"
+  demo_video: "https://drive.google.com/file/d/1ru4GiJhXyowkc81fGCrseKkZu56gTtsD/view?usp=drivesdk"
+  live_demo: "No Deploy"
+  presentation: "AI SECURITY SHIELD.PDF"
