@@ -304,7 +304,7 @@ See [`docs/architecture.md`](docs/architecture.md) for the full architecture dia
 |---|---|
 Live Demo | [`demo/live-demo-url.txt`](demo/live-demo-url.txt) |
 Demo Video | [`demo/demo-video-link.txt`](demo/demo-video-link.txt) |
-Presentation | [`presentation/AI SECURITY SHIELD.PDF`](presentation) |
+Presentation | [`presentation/AI SECURITY SHIELD.PDF`](presentation/) |
 Screenshots | [`demo/screenshots/`](demo/screenshots/) |
 ---
 
