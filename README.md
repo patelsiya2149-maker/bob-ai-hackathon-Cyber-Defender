@@ -116,8 +116,8 @@ See [`docs/architecture.md`](docs/architecture.md) for the full architecture dia
 
 ## Demo Links
 
-- Live Demo: [See demo/live-demo-url.txt](demo/live-demo-url.txt)
-- Demo Video: [See demo/demo-video-link.txt](demo/demo-video-link.txt)
+- Live Demo: Not Deployed
+- Demo Video: (https://drive.google.com/file/d/1ru4GiJhXyowkc81fGCrseKkZu56gTtsD/view?usp=drivesdk)
 
 ---
 
